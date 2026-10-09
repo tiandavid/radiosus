@@ -1,2 +1,4 @@
 # radiosus
-Code and scripts for Owens pupfish paper
+Code and scripts associated with "Rescued from extinction in two buckets: genomic consequences of an extreme bottleneck in the endangered Owens pupfish"
+
+bioRxiv link: 
