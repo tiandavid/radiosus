@@ -13,11 +13,6 @@ Demographic history / effective population size
 * Plot SMC++ and GONE2 results in R: GONE2_SMC_plotting.R (Fig. 2)
 * Run currentNe2: currentNe2.sh
 
-
-
-
-
-bcftools ROH
-
-
-
+Pixy (pi, fst, theta, tajima's D)
+* Run pixy on allsites VCF: pixy.sh and pixy.hudson.fst.sh
+* Plot in R: pixy_plotting.R
