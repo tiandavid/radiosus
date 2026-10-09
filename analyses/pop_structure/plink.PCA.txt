@@ -1,0 +1,15 @@
+VCF=/global/scratch/users/davidtian/radiosus_proj/filtered_VCFs/CRAD.biallelic.chrs.only.HARD.FILTER.EXCLUDED.SNPS.k150mappable.GQ20.min3reads.mindepth.maxdepth.maxmiss50.rm.high.ind.miss.rm.alt.asterisk.vcf.gz
+PLINK=/global/home/users/davidtian/software/plink-1.9
+
+#prune
+#prune (--indep-pairwise 50 10 0.2) 
+$PLINK --vcf $VCF --double-id --allow-extra-chr \
+--set-missing-var-ids @:# --indep-pairwise 50 10 0.2 \
+--chr-set 24 no-x no-y no-xy no-mt \
+--out CRAD.FINAL.chrs.only.rm.CYPRAD18_1.plink.PCA.indep-pairwise.50_10_0.2
+
+#make PCA
+$PLINK --vcf $VCF --double-id --allow-extra-chr \
+--set-missing-var-ids @:# --chr-set 24 no-x no-y no-xy no-mt \
+--extract CRAD.FINAL.chrs.only.rm.CYPRAD18_1.plink.PCA.indep-pairwise.50_10_0.2.prune.in \
+--make-bed --pca --out CRAD.FINAL.chrs.only.rm.CYPRAD18_1.plink.PCA.indep-pairwise.50_10_0.2.keep
