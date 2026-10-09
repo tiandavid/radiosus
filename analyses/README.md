@@ -16,3 +16,7 @@ Demographic history / effective population size
 Pixy (pi, fst, theta, tajima's D)
 * Run pixy on allsites VCF: pixy.sh and pixy.hudson.fst.sh
 * Plot in R: pixy_plotting.R
+
+Inbreeding
+* Run bcftools/ROH: bcftools.roh.sh
+* Plot in R: ROH_plotting.R
