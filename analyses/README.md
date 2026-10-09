@@ -6,8 +6,10 @@ Population structure
 * Plot PCA in R: PCA_plotting.R (Fig. 1B)
 
 Demographic history / effective population size 
-* Run SMC++
-* Run GONE2:
+* Run SMC++:
+  + vcf2smc.v3.sh
+  + smc.estimate.v3.sh
+* Run GONE2: 
 * Run currentNe2: currentNe2.sh
 * Plot SMC++ and GONE2 results in R: GONE2_SMC_plotting.R (Fig. 2)
 
