@@ -7,16 +7,14 @@ Population structure
 
 Demographic history / effective population size 
 * Run SMC++:
-  + vcf2smc.v3.sh
-  + smc.estimate.v3.sh
-* Run GONE2: 
-* Run currentNe2: currentNe2.sh
+  + Vary distinguished individual and convert VCF to SMC++ format: vcf2smc.v3.sh
+  + Run estimate and generate .csv output for plotting: smc.estimate.v3.sh
+* Run GONE2 across recombination rates: GONE2.v2.sh
 * Plot SMC++ and GONE2 results in R: GONE2_SMC_plotting.R (Fig. 2)
+* Run currentNe2: currentNe2.sh
 
 
-SMC++
 
-GONE2
 
 
 bcftools ROH
