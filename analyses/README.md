@@ -5,7 +5,7 @@ Population structure
 * Run ADMIXTURE: admixture.sh
 * Plot PCA in R: PCA_plotting.R (Fig. 1B)
 
-Effective population size 
+Demographic history / effective population size 
 * Run SMC++
 * Run GONE2:
 * Run currentNe2: currentNe2.sh
