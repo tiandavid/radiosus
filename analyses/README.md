@@ -1,13 +1,15 @@
-#Analyses
+# Analyses
 
 Population structure
 * Convert VCF to plink format, prune, make PCA: plink.PCA.txt
 * Run ADMIXTURE: admixture.sh
-* Plot PCA in R: PCA_plotting.R
+* Plot PCA in R: PCA_plotting.R (Fig. 1B)
 
-
-
-Admixture
+Effective population size 
+* Run SMC++
+* Run GONE2:
+* Run currentNe2: currentNe2.sh
+* Plot SMC++ and GONE2 results in R: GONE2_SMC_plotting.R (Fig. 2)
 
 
 SMC++
