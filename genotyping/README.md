@@ -12,10 +12,11 @@
    * markdup_spark.sh and run_markdup_spark.sh
    * qualimap.sh and run_qualimap.sh
 
-12. Calling variants with GATK Haplotype Caller
+4. Calling variants with GATK Haplotype Caller
 
    * GATK_haplotype_caller.sh and run_GATK_haplotype_caller.sh
-   * hist_GATK_haplotype_caller.sh and run_hist_GATK_haplotype_caller.sh
+  
+
 
 13. Generate genomics database per chromosome with GenomicsDatabaseImport
    * DHP_genomicsDBImport.sh with DHP.chrom.chrs.list and DHP.chrom.scaffs.list
