@@ -1,8 +1,6 @@
 #!/bin/bash
 
 INDS_ALL=()
-DHP_BAM_FOLDER=/global/scratch/users/davidtian/Paper3_big_one/FINAL_RUN/DHP_bams
-DHP_MARK_DUP_FOLDER=/global/scratch/users/davidtian/Paper3_big_one/FINAL_RUN/DHP_markdup_bams
 MIO_BAM_FOLDER=/global/scratch/users/davidtian/Paper3_big_one/FINAL_RUN/MIO_bams
 MIO_MARK_DUP_FOLDER=/global/scratch/users/davidtian/Paper3_big_one/FINAL_RUN/MIO_markdup_bams
 
