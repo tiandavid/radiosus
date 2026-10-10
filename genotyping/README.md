@@ -1,6 +1,6 @@
 # Outline of genotyping pipeline
 
-## Modern: 
+Steps 1-4 are identical to the pipeline from: https://github.com/tiandavid/reference_genomes_project/tree/main/genotyping_pipeline
 
 1. Trimming reads:
    * trim_fastp.sh and run_trim_fastp.sh
