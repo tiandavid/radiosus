@@ -16,13 +16,10 @@ Steps 1-4 are identical to the pipeline from: https://github.com/tiandavid/refer
 
    * GATK_haplotype_caller.sh and run_GATK_haplotype_caller.sh
   
+5. Generate genomics database per chromosome with GenomicsDatabaseImport
+   * genomicsDBImport.sh with MIO.chrom.chrs.list and MIO.chrom.scaffs.list
 
-
-13. Generate genomics database per chromosome with GenomicsDatabaseImport
-   * DHP_genomicsDBImport.sh with DHP.chrom.chrs.list and DHP.chrom.scaffs.list
-   * MIO_genomicsDBImport.sh with MIO.chrom.chrs.list and MIO.chrom.scaffs.list
-
-14. Joint genotyping with GATK genotypeGVCFs
+6sdfsdfsd. Joint genotyping with GATK genotypeGVCFs
     
 * Generating allsites VCF (variant + invariant sites) takes a long time.
 
