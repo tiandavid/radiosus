@@ -19,19 +19,12 @@ Steps 1-4 are identical to the pipeline from: https://github.com/tiandavid/refer
 5. Generate genomics database per chromosome with GenomicsDatabaseImport
    * genomicsDBImport.sh with MIO.chrom.chrs.list and MIO.chrom.scaffs.list
 
-6sdfsdfsd. Joint genotyping with GATK genotypeGVCFs
-    
-* Generating allsites VCF (variant + invariant sites) takes a long time.
+6. Joint genotyping with GATK genotypeGVCFs to produce allsites VCF
+  * genotypeGVCFs.allsites.sh
 
-* Run script to generate allsites VCF to extract the invariant sites, while also running a script to generate a VCF with just variant sites to begin working with.
-* DHP
-  * DHP.genotypeGVCFs.allsites.sh, combine GVCFs with DHP.allsites.gather.vcfs.sh
-  * DHP.genotypeGVCFs.chrs.sh and DHP.genotypeGVCFs.scaffs.sh, combine GVCFs with DHP.gather.vcfs.sh
 
-* MIO
-  * MIO.genotypeGVCFs.allsites.sh, combine GVCFs with MIO.allsites.gather.vcfs.sh
-  * MIO.genotypeGVCFs.chrs.sh and MIO.genotypeGVCFs.scaffs.sh, combine GVCFs with MIO.gather.vcfs.sh
 
+####
 15. Filtering invariant sites
 
 * Separate invariant sites from allsites and reset missing genotypes to ./. from 0/0 due to recent GATK change
