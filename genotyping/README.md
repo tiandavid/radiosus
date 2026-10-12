@@ -40,11 +40,9 @@ Steps 1-4 are identical to the pipeline from: https://github.com/tiandavid/refer
   * vcftools.stats.sh
   * site.min.max.depth.filter.sh
 
-* Make chromosome only version of VCF
-  * restrict.chrs.only.sh
-
-* Remove individual with high missingness (>40%)
-  * rm.high.miss.ind.sh
+* Make chromosome only version of VCF and remove individual with high missingness (>40%)
+  * restrict.chrs.only.sh and rm.high.miss.ind.sh (invariant)
+  * variant.vcf.rm.high.miss.and.restrict.chr.sh (variant)
 
 * Concat filtered invariant and variant VCFs for pixy
   * concat.invariant.variant.sh
