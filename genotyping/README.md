@@ -22,38 +22,24 @@ Steps 1-4 are identical to the pipeline from: https://github.com/tiandavid/refer
 6. Joint genotyping with GATK genotypeGVCFs to produce allsites VCF
   * genotypeGVCFs.allsites.sh
 
-
-
-####
-15. Filtering invariant sites
-
-* Separate invariant sites from allsites and reset missing genotypes to ./. from 0/0 due to recent GATK change
-  * DHP.sep.invariant.fixmissgeno.sh, DHP.bgzip.sh and MIO.sep.invariant.fixmissgeno.sh, MIO.bgzip.sh
+7. Separate invariant sites from allsites and reset missing genotypes to ./. from 0/0 due to recent GATK change
+  * fixmissgeno.sep.var.invar.sh
  
-* Filter invariant sites based on mappability, minimum RGQ of 20, and minimum read depth of 3
-  * DHP.invariant.k150mappability.RGQ20.DP3.sh and MIO.invariant.k150mappability.RGQ20.DP3.sh
+8. Filter invariant sites based on mappability, minimum RGQ of 20, and minimum read depth of 3
+  * filter.invariant.sh
 
-16. Filtering variant sites 
+9. Filtering variant sites 
 
 * Restrict SNPS to biallelic and GATK recommended hard filters
-  * DHP_GATK_hard_filter.sh and DHP_exclude_filt_variants.sh
-  * MIO_GATK_hard_filter.sh and MIO_exclude_filt_variants.sh
+  * GATK.hard.filter.excl.filt.var.sh
  
-* Reset missing genotypes to ./. from 0/0 due to recent GATK change
-  * DHP.reset.missing.genotypes.sh and MIO.reset.missing.genotype.sh
- 
-* Apply genmap mappability mask
-  * MIO.apply.k150.mappability.sh
- 
-* Minimum GQ20 filter
-  * MIO.filter.GQ20.recode.sh
- 
-* Minimum read depth of 3 filter
-  * DHP.filt.min.read.depth.3.sh and MIO.filt.min.read.depth.3.sh
+* Apply genmap mappability mask. min GQ20, min read depth 3 filters
+  * mappability.GQ.DP.filter.sh
+
  
 * Filter based on site depth: minimum of 1/3x mean depth, maximum of 2x mean depth
   * vcftools.stats.sh and vcf_metrics.R
-  * DHP.filter.site.min.max.depth.sh and MIO.filter.site.min.max.depth.sh
+  * site.min.max.depth.filter.sh
 
 * Max site missingness of 25% filter
   * DHP.maxmissingness25.sh and MIO.maxmissingness25.sh
