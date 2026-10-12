@@ -35,15 +35,16 @@ Steps 1-4 are identical to the pipeline from: https://github.com/tiandavid/refer
  
 * Apply genmap mappability mask. min GQ20, min read depth 3 filters
   * mappability.GQ.DP.filter.sh
-
  
 * Filter based on site depth: minimum of 1/3x mean depth, maximum of 2x mean depth
-  * vcftools.stats.sh and vcf_metrics.R
+  * vcftools.stats.sh
   * site.min.max.depth.filter.sh
 
-* Max site missingness of 25% filter
-  * DHP.maxmissingness25.sh and MIO.maxmissingness25.sh
- 
+* Make chromosome only version of VCF
+  * restrict.chrs.only.sh
 
-17. Make chromosome only version of final VCF
-  * DHP.restrict.VCF.to.chrs.sh and MIO.restrict.VCF.to.chrs.sh
+* Remove individual with high missingness (>40%)
+  * rm.high.miss.ind.sh
+
+* Concat filtered invariant and variant VCFs for pixy
+  * concat.invariant.variant.sh
