@@ -43,10 +43,10 @@ Steps 1-4 are identical to the pipeline from: https://github.com/tiandavid/refer
   * DHP.reset.missing.genotypes.sh and MIO.reset.missing.genotype.sh
  
 * Apply genmap mappability mask
-  * DHP.apply.k150.mappability.sh and MIO.apply.k150.mappability.sh
+  * MIO.apply.k150.mappability.sh
  
 * Minimum GQ20 filter
-  * DHP.filter.GQ20.recode.sh and MIO.filter.GQ20.recode.sh
+  * MIO.filter.GQ20.recode.sh
  
 * Minimum read depth of 3 filter
   * DHP.filt.min.read.depth.3.sh and MIO.filt.min.read.depth.3.sh
