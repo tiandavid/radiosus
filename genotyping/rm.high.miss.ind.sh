@@ -13,4 +13,3 @@
 
 source activate bcftools
 bcftools view --threads 32 -s ^CYPRAD18_1 -O z -o CRAD.invariant.chrs.only.k150mappable.RGQ20.min3reads.rm.high.ind.miss.vcf.gz CRAD.invariant.chrs.only.k150mappable.RGQ20.min3reads.vcf.gz
-bcftools view -s ^CYPRAD18_1 -O z -o CRAD.biallelic.HARD.FILTER.EXCLUDED.SNPS.k150mappable.GQ20.min3reads.mindepth.maxdepth.maxmiss50.rm.high.ind.miss.vcf.gz CRAD.biallelic.HARD.FILTER.EXCLUDED.SNPS.k150mappable.GQ20.min3reads.mindepth.maxdepth.maxmiss50.vcf.gz
